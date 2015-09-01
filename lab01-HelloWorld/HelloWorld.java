@@ -8,7 +8,7 @@ public class HelloWorld{
     //add main method
     public static void main(String[] args){
     //print the statment with box around it
-        System.out.println("################");
+        System.out.println(" /\/\/\/\/\/\/\/\/\ ");
         System.out.println("################");
         System.out.println("#              #");
         System.out.println("#  HelloWorld  #");
@@ -16,7 +16,6 @@ public class HelloWorld{
         System.out.println("################");
         System.out.println("################");
         System.out.println("test");
-        
         
         //test/testtest
     }
