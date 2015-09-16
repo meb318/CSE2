@@ -10,10 +10,10 @@ public class Timer{ //Class
         System.out.print("Enter the time you will be eating dinner ");//user enters time of dinner
         int dinnerTime = myScanner.nextInt();//makes the dinnerTime the number entered
         
-        int timeUntil = dinnerTime - currentTime;
-        int finalHour = timeUntil / 100;
-        int finalMin = timeUntil % 100;
-        System.out.println("You have " +  finalHour + " hours and " + finalMin + " minutes until dinner");
+        int timeUntil = dinnerTime - currentTime;//calculating the military time left
+        int finalHour = timeUntil / 100;//finding the hours
+        int finalMin = timeUntil % 100;//finding the minutes
+        System.out.println("You have " +  finalHour + " hours and " + finalMin + " minutes until dinner");//displaying the time in hours and minutes
         
     }
     
