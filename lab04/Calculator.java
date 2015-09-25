@@ -12,23 +12,23 @@ public class Calculator{//Class
         System.out.print("b =  ");//user enters value b
         double b = myScanner.nextDouble();//makes b the number entered
         System.out.print("operator = ");//user enter operator
-        String operator = myScanner.next();
+        String operator = myScanner.next();//makes the number entered the operator
       
-        switch(operator){
-        case "+": operator = "+";
-            System.out.println(a + b);
-            break;
-        case "-": operator = "-";
-            System.out.println(a - b);
-            break;
-        case "*": operator = "*";
-            System.out.println(a * b);
-            break;
-        case "/": operator = "/";
-            System.out.println(a / b);
-            break;
-        default : 
-            System.out.println("illegal operator");
+        switch(operator){//starts switch statement
+        case "+": operator = "+";//gives the case if the operator is +
+            System.out.println(a + b);//prints the calculation
+            break;//gives stopping point
+        case "-": operator = "-";//gives the case if the operator is -
+            System.out.println(a - b);//prints the calculation
+            break;//gives stopping point
+        case "*": operator = "*";//gives the case if the operator is *
+            System.out.println(a * b);//prints the calculation
+            break;//gives stopping point
+        case "/": operator = "/";//gives the case if the operator is /
+            System.out.println(a / b);//prints the calculation
+            break;//gives stopping point
+        default : //executes when using an illegal operator
+            System.out.println("illegal operator");//prints "illegal operator 
         }
     }
 }
