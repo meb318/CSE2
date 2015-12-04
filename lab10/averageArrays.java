@@ -1,3 +1,6 @@
+//ask user to set the size of an array. the array will be filled with random values between 0 and 100.
+//
+
 import java.util.Scanner;
 import java.util.Random;
 
@@ -11,48 +14,32 @@ public class averageArrays{
         int ave = 0;
         int great = 0;
         int less = 0;
+        int a = 1;
+        int count = n;
         
-        //int r = (int)(Math.random()*100);
-        //System.out.println(r);
-        
-        int[] arr ;
-        arr = new int[n];
+        int[] arr = new int[n];
         
         for(int i = 0; i < n; i++){ //Prints all the values
-            arr[0] = (int)(Math.random()*100);
-            System.out.println("arr["+ i +"]= " + arr[0]);
-            
-                for(int m = 0; m < 1; m++){
-                    sum = sum + arr[0];
-                    ave = sum / n;
-                    //System.out.println(ave);
-                    System.out.println("The sum is currently: " + sum);
-                }
-                
-                for(int h = 0; h < 1; h++){
-                    if (arr[0] < ave){
-                        great++;
-                    }
-                    else {
-                        less++;
-                    }
-                    System.out.println(great);
-                    System.out.println(less);
-                }
+            arr[i] = (int)(Math.random()*100);
+            sum = sum + arr[i];
+            System.out.println("arr["+i+"] = " + arr[i]);
         }
         
+        ave = sum/n;
         
-        
-        
-        
+        for(int i = 0; i < n; i++){
+            if(arr[i] >= ave){
+                great++;
+            }
+            else{
+                less++;
+            }
+        }
+                
+        System.out.println("sum = " + sum);
+        System.out.println("average = " + ave);
+        System.out.println("Greater than average = " + great);
+        System.out.println("Less than average = " + less);
+                
     }
 }
-
-
-/**int[] arr;
-arr = new int[5];
-arr[0]=5;
-
-for(int i = 0; i<5; i++){
-    System.out.println("arr["+ i +"]= " + arr[i]);
-}**/
