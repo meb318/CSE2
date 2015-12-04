@@ -1,22 +1,22 @@
 import java.util.Arrays;
 
 public class sortingArrays{
+    
+    public static void sort(int[] i){
+        Arrays.sort(arr);
+        //System.out.print(arr[]);
+    }
+        
     public static void main(String[] args){
         
-        public static void sort(int i){
-            Arrays.sort(arr[i]);
-            //System.out.print(arr[]);
-        }
-        
-        int[] arr;
-        arr = new int[20];
+        int[] arr = new int[20];
         
         for(int i = 0; i<20; i++){ //Prints all the values
             arr[i] = (int)(Math.random()*100);
             System.out.print(" " + arr[i]);
-            
         }
-        
+        //sort(arr);
+        Arrays.sort(arr);
         
         System.out.println();
         int[] arr2;
@@ -34,8 +34,8 @@ public class sortingArrays{
         for(int k=0; k<30; k++){
             arr3[k] = (int)(Math.random()*100);
             System.out.print(" " + arr3[k]);
-            
         }
+        System.out.println();
 
     }
 }
